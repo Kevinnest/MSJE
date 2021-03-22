@@ -9,6 +9,7 @@ _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval 
  
 
 ## Contents
+1. [Instroduction](#introduction)
 1. [Installation](#installation)
 2. [Recipe1M Dataset](#recipe1m-dataset)
 3. [Vision models](#vision-models)
@@ -17,7 +18,17 @@ _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval 
 6. [Testing](#testing)
 7. [Contact](#contact)
 
-## Installation and Dependencies
+## Introduction
+
+### Recipe-to-Image retrieval task
+
+<p align="center">
+    <img src="assets/retrieval_exp.png" width="800"/>
+</p>
+
+Given a recipe query which contains the recipe title, a list of ingredients and a sequence of cooking instructions, the goal is to train a statistical model to retrieve the associated image. For the recipe query, we list the top 5 images retrieved by JESR, ACME and our MSJE model.
+
+## Installation
 
 We use the environment with Python 3.7.6 and Pytorch 1.4.0. Run ```pip install --upgrade cython``` and then install the dependencies with ```pip install -r requirements.txt```. Our work is an extension of [im2recipe](https://github.com/torralba-lab/im2recipe-Pytorch).
 
@@ -44,7 +55,7 @@ Recipe1M LMDBs and pickle files can be found in train.tar, val.tar and test.tar.
 
 It is worth mentioning that the code is expecting images to be located in a four-level folder structure, e.g. image named `0fa8309c13.jpg` can be found in `./data/images/0/f/a/8/0fa8309c13.jpg`. Each one of the Tar files contains the first folder level, 16 in total. 
 
-
+The pre-trained TFIDF vectors for each recipe, image category feature for each image and the optimized category label for each image-recipe pair can be found in [id2tfidf_vec.pkl](https://drive.google.com/file/d/1TF6iuUDHqfqIT-LT5WQ-zX98mNyTzuOS/view?usp=sharing), [id2img_101_cls_vec.pkl](https://drive.google.com/file/d/1RGkl7ghjoX25hhgq2837Ou5iQWboiPbi/view?usp=sharing) and [id2class_1005.pkl](https://drive.google.com/file/d/1J75v63kgMTNGl9UKldq9kGQhSMRom1NX/view?usp=sharing) respectively.
 ### Word2Vec
 
 Training word2vec with recipe data:
