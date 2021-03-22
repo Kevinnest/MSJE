@@ -15,7 +15,7 @@ _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval 
 
 ## Installation
 
-We use the environment with Python 3.7.6 and Pytorch 1.4.0. Our work is an extension of [im2recipe](https://github.com/torralba-lab/im2recipe-Pytorch).
+We use the environment with Python 3.7.6 and Pytorch 1.4.0. Run ```pip install --upgrade cython``` and then install the dependencies with ```pip install -r requirements.txt```. Our work is an extension of [im2recipe](https://github.com/torralba-lab/im2recipe-Pytorch).
 
 ## Recipe1M Dataset
 
