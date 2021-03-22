@@ -64,11 +64,9 @@ Training word2vec with recipe data:
 - Train with:
 
 ```
-./word2vec -hs 1 -negative 0 -window 10 -cbow 0 -iter 10 -size 300 -binary 1 -min-count 10 -threads 20 -train tokenized_instructions_train.txt -output vocab.bin
+./word2vec -hs 1 -negative 0 -window 10 -cbow 0 -iter 10 -size 300 -binary 1 -min-count 10 -threads 20 -train tokenized_text.txt -output vocab.bin
 ```
 
-- Run ```python get_vocab.py vocab.bin``` to extract dictionary entries from the w2v binary file. This script will save ```vocab.txt```, which will be used to create the dataset later.
-- Move ```vocab.bin``` and ```vocab.txt``` to ```./data/text/```.
 
 
 
