@@ -3,6 +3,10 @@
 This repository contains the code to train and evaluate models from the paper:  
 _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval Service_
 
+[//]: # ( If you find this code useful, please consider citing:)
+
+
+ 
 
 ## Contents
 1. [Installation](#installation)
@@ -13,7 +17,7 @@ _Learning TFIDF Enhanced Joint Embedding for Recipe-Image Cross-Modal Retrieval 
 6. [Testing](#testing)
 7. [Contact](#contact)
 
-## Installation
+## Installation and Dependencies
 
 We use the environment with Python 3.7.6 and Pytorch 1.4.0. Run ```pip install --upgrade cython``` and then install the dependencies with ```pip install -r requirements.txt```. Our work is an extension of [im2recipe](https://github.com/torralba-lab/im2recipe-Pytorch).
 
